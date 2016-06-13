@@ -22,10 +22,7 @@ That's it.
 ```bash
 $ vagrant ssh
 Welcome to Barge 2.1.2, Docker version 1.9.1, build 66c06d0-stripped
-[bargee@barge ~]$ mkdir hello-world
 [bargee@barge ~]$ cd hello-world/
-[bargee@barge hello-world]$ wget https://raw.githubusercontent.com/tailhook/vagga-presentation/master/tutorial/step1/vagga.yaml
-[bargee@barge hello-world]$ wget https://raw.githubusercontent.com/tailhook/vagga-presentation/master/tutorial/step1/app.py
 [bargee@barge hello-world]$ vagga
 Available commands:
     run                 Run flask app
@@ -33,14 +30,11 @@ Available commands:
 .
 .
 .
- * Running on http://127.0.0.1:5000/
+ * Running on http://0.0.0.0:5000/
 ```
 
 At an another terminal
 
 ```bash
-$ vagrant ssh
-Welcome to Barge 2.1.2, Docker version 1.9.1, build 66c06d0-stripped
-[bargee@barge ~]$ wget -qO- http://127.0.0.1:5000/ && echo
-Hello World!
+$ open http://localhost:5000/
 ```

@@ -15,6 +15,10 @@ Vagrant.configure(2) do |config|
 
   config.vm.box = "ailispaw/barge"
 
+  config.vm.network :forwarded_port, guest: 5000, host: 5000
+
+  config.vm.provision :file, source: "hello-world", destination: "~/"
+
   config.vm.provision :shell, run: "always" do |sh|
     sh.inline = <<-EOT
       # http://vagga.readthedocs.io/en/latest/installation.html#runtime-dependencies

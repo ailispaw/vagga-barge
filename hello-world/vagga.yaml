@@ -1,0 +1,12 @@
+containers:
+  flask:
+    setup:
+    - !Ubuntu trusty
+    - !UbuntuUniverse
+    - !Install [python3-flask]
+
+commands:
+  run: !Command
+    description: Run flask app
+    container: flask
+    run: "python3 app.py"

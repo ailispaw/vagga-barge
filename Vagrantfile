@@ -8,6 +8,8 @@ module VagrantPlugins
   end
 end
 
+VAGGA_VERSION="0.6.1"
+
 Vagrant.configure(2) do |config|
   config.vm.define "vagga-barge"
 
@@ -27,8 +29,8 @@ Vagrant.configure(2) do |config|
 
       # Install vagga
       cd /tmp
-      wget -q http://files.zerogw.com/vagga/vagga-0.6.0.tar.xz
-      tar -xJf vagga-0.6.0.tar.xz
+      wget -q http://files.zerogw.com/vagga/vagga-#{VAGGA_VERSION}.tar.xz
+      tar -xJf vagga-#{VAGGA_VERSION}.tar.xz
       cd vagga
       ./install.sh
     EOT

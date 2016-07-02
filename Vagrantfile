@@ -23,7 +23,7 @@ Vagrant.configure(2) do |config|
     sh.inline = <<-EOT
       # http://vagga.readthedocs.io/en/latest/installation.html#runtime-dependencies
 
-      # Install shadow on every boot, because it's not persistent 
+      # Install shadow on every boot, because it's not persistent
       pkg install shadow
       chmod u+s /usr/bin/newuidmap
       chmod u+s /usr/bin/newgidmap

@@ -21,7 +21,7 @@ That's it.
 
 ```bash
 $ vagrant ssh
-Welcome to Barge 2.1.2, Docker version 1.9.1, build 66c06d0-stripped
+Welcome to Barge 2.3.4, Docker version 1.10.3, build 20f81dd
 [bargee@barge ~]$ cd hello-world/
 [bargee@barge hello-world]$ vagga
 Available commands:

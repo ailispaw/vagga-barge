@@ -8,7 +8,7 @@ module VagrantPlugins
   end
 end
 
-VAGGA_VERSION="0.7.2"
+VAGGA_VERSION="0.8.0"
 
 Vagrant.configure(2) do |config|
   config.vm.define "vagga-barge"
